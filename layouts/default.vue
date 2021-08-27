@@ -14,40 +14,42 @@
   >
     <header class="md:flex justify-between items-start">
       <div class="mb-6">
-        <h1 class="brand-font text-white text-4xl text-center md:text-left">
-          Michael <span class="inline md:block">McNees</span>
+        <h1
+          class="brand-font text-white text-4xl text-center mb-1 md:text-left"
+        >
+          Michael McNees
         </h1>
         <p class="text-white text-center md:text-left">
           Fullstack Software Engineer
         </p>
       </div>
       <nav class="flex justify-center">
-        <ul class="flex gap-x-12">
+        <ul class="flex gap-x-4">
           <li
             :class="[
-              'flex brand-font text-white',
+              'flex brand-font text-white transform hover:translate-y-2 transition duration-300 ease-in-out',
               $route.name === 'index' ? 'underline' : null
             ]"
           >
-            <NuxtLink to="/" class="h-full w-full hover:mt-1">Home</NuxtLink>
+            <NuxtLink to="/" class="h-full w-full p-4 text-lg">Home</NuxtLink>
           </li>
           <li
             :class="[
-              'flex brand-font text-white',
+              'flex brand-font text-white transform hover:translate-y-2 transition duration-300 ease-in-out',
               $route.name === 'tech' ? 'underline' : null
             ]"
           >
-            <NuxtLink to="/tech" class="h-full w-full hover:mt-1"
+            <NuxtLink to="/tech" class="h-full w-full p-4 text-lg"
               >Tech</NuxtLink
             >
           </li>
           <li
             :class="[
-              'flex brand-font text-white',
+              'flex brand-font text-white transform hover:translate-y-2 transition duration-300 ease-in-out',
               $route.name === 'about' ? 'underline' : null
             ]"
           >
-            <NuxtLink to="/about" class="h-full w-full hover:mt-1"
+            <NuxtLink to="/about" class="h-full w-full p-4 text-lg"
               >About</NuxtLink
             >
           </li>
@@ -112,7 +114,17 @@
           href="https://blog.mcnees.me/"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white text-lg flex items-center gap-x-2 hover:underline"
+          class="
+            text-white text-lg
+            flex
+            items-center
+            gap-x-2
+            transform
+            hover:-translate-y-2
+            transition
+            duration-300
+            ease-in-out
+          "
         >
           <MediumIcon class="h-8 w-8 inline" />
           Medium // Blog
@@ -121,7 +133,17 @@
           href="https://twitter.com/bsknuckles"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white text-lg flex items-center gap-x-2 hover:underline"
+          class="
+            text-white text-lg
+            flex
+            items-center
+            gap-x-2
+            transform
+            hover:-translate-y-2
+            transition
+            duration-300
+            ease-in-out
+          "
         >
           <TwitterIcon class="h-8 w-8 inline" />
           Twitter
@@ -130,7 +152,17 @@
           href="https://www.linkedin.com/in/michaelmcnees/"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white text-lg flex items-center gap-x-2 hover:underline"
+          class="
+            text-white text-lg
+            flex
+            items-center
+            gap-x-2
+            transform
+            hover:-translate-y-2
+            transition
+            duration-300
+            ease-in-out
+          "
         >
           <LinkedInIcon class="h-8 w-8 inline" />
           LinkedIn
@@ -139,7 +171,17 @@
       <div class="hidden md:block">
         <a
           href="https://www.dropbox.com/s/874z72ozftqsikf/MichaelMcNees_Resume_2020.pdf?dl=0"
-          class="text-white text-lg flex items-center gap-x-2 hover:underline"
+          class="
+            text-white text-lg
+            flex
+            items-center
+            gap-x-2
+            transform
+            hover:-translate-y-2
+            transition
+            duration-300
+            ease-in-out
+          "
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -171,15 +213,9 @@ export default defineComponent({
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-/* .brand-gradient {
-  background: rgb(3, 105, 161);
-  background: linear-gradient(
-    122deg,
-    rgba(3, 105, 161, 1) 0%,
-    rgba(12, 74, 110, 1) 100%
-  );
-} */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 .brand-font {
-  font-family: 'Press Start 2P', monospace;
+  /* font-family: 'Press Start 2P', monospace; */
+  font-family: 'Rock Salt', cursive;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="text-white max-w-prose divide-y divide-white">
-    <div class="flex flex-col gap-y-2 py-8">
+    <div class="flex flex-col gap-y-2 pb-8">
       <h2 class="text-2xl font-bold">Professional Journey</h2>
       <p>
         I grew up in a small midwestern town near the Great Lakes and spent my

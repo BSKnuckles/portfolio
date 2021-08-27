@@ -1,5 +1,6 @@
 <template>
   <div class="text-white flex flex-col gap-y-4">
+    <h2 class="text-2xl font-bold">My Tech Stack</h2>
     <p>
       I feel strongly about supporting and using technologies that have a
       positive impact on the world. I try to extend this viewpoint to my choice
