@@ -5,19 +5,15 @@
       find me in other places like Medium and Twitter.
     </p>
     <p>
-      If you're interesting in working with me on a project, feel free to get in
-      touch @ <a :href="mailto" class="underline">mcnees.michael[@]gmail.com</a>
+      If you're interesting in working with me on a project, feel free to
+      <Mailto
+        mail="mcnees.michael@gmail.com"
+        subject="Website Contact"
+        title="Write me a email"
+        class="border-b border-white pb-0.5"
+      >
+        send me an email
+      </Mailto>
     </p>
   </div>
 </template>
-
-<script>
-export default {
-  computed: {
-    mailto() {
-      const email = 'mcnees.michael@gmail.com'
-      return `mailto:${email}`
-    }
-  }
-}
-</script>
